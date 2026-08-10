@@ -1,0 +1,14 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(10, OUTPUT);//INPUT_PULLUPアルディーノ内の抵抗に接続する（スイッチ用の抵抗いらない）
+  pinMode(8, INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(digitalRead(8) == HIGH){//電圧が高いか低いか3.0V以上か1.5V以下
+    digitalWrite(10, LOW);
+  }else{
+    digitalWrite(10, HIGH);
+  }
+}
