@@ -1,0 +1,23 @@
+//ピン番号の定義
+const int RED = 9;
+const int GREEN = 10;
+const int BLUE = 11;
+
+//PWM Duty比の設定 コンスタントだから変えて色変える
+int redValue = 255; 
+int greenValue = 0; 
+int blueValue = 0; 
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(RED, OUTPUT);
+  pinMode(GREEN, OUTPUT);
+  pinMode(BLUE, OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  analogWrite(RED, redValue);
+  analogWrite(GREEN, greenValue);
+  analogWrite(BLUE, blueValue);
+}
