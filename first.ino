@@ -1,0 +1,14 @@
+void setup() {
+  // put your setup code here, to run once:
+  //初期設定ということ
+  pinMode(10, OUTPUT);//10番のピンを出力設定
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(10, HIGH);//指定のピン（10）をON/OFF(HIGH/LOW)する
+  delay(100000);//遅延
+  digitalWrite(10, LOW);
+  delay(100000);
+}
